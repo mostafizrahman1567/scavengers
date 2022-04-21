@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: rgb(25, 12, 41);
+}
+.container1{
+  width: 100vw;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.container1 h2{
+ text-align: center;
+ padding: 4rem;
+}
+  .container2{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.container3{
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt1{
+    color: white;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-family: sans-serif;
+    width: 59rem;
+}
+.slider{
+   width: 22rem;
+  
+    overflow: hidden; 
+    position: relative;}
+.images{
+display: flex;
+width: 100%;
+}
+.images img{
+   width: 100%;
+    height: 30.4rem;
+    transition: all .1s ease;
+}
+.images input{
+    display: none;
+}
+.dots{
+    display: flex;
+   justify-content: center;
+   margin: .5rem;
+}
+.dots >label{
+   border: .2rem solid white;
+  border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+ margin: .5rem;
+ transition: .5s ease;
+}
+.dots label:hover{
+    background-color: white;
+}
+#img1:checked~.m1{
+ margin-left:0 ;
+}
+#img2:checked~.m2{
+    margin-left:-100% ;
+}
+#img3:checked~.m3{
+    margin-left:-200%;
+}
+#img4:checked~.m4{
+    margin-left:-300%;
+}
+@media only screen and (max-width: 700px){
+    .txt1{
+          width:35rem;
+          font-size: 1.6rem;
+    }
+   
+    
+    .container1{
+        height: 50rem;
+    }
+   
+    
+
+}
+@media only screen and (max-width: 400px){
+    .txt1{
+          width:26rem;
+          font-size: 1.6rem;
+        
+    }
+   
+    
+}
